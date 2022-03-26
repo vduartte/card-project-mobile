@@ -1,0 +1,344 @@
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-family: "Roboto-Regular";
+    /*APELIDO*/
+}
+
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+    font-family: "Roboto-Medium";
+}
+
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+    font-family: "Roboto-Bold";
+}
+
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto-Regular";
+    background-color: #D9DFE7;
+}
+
+
+/* Generics Styles */
+
+.status--active {
+    color: #00A5DD !important;
+}
+
+
+/*************** HEADER ***********/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 150px;
+    background-color: #00A5DD;
+    background-image: linear-gradient(180deg, #00A5DD, #46BEE6);
+    color: white;
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+header i {
+    font-size: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+}
+
+
+/***************** MAIN  *****************/
+
+.page-content {
+    margin-bottom: 80px;
+}
+
+.card-box {
+    position: relative;
+    top: -30px;
+    left: 0;
+    width: 90%;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.card-title {
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: .5px solid #e5e4e4;
+}
+
+.card-perfil {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    background-color: purple;
+    background-image: url(../IMAGES/fake-1.png);
+    box-shadow: 0 0 10px black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.card-counter {
+    position: absolute;
+    bottom: 0;
+    right: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    background-color: #30D38F;
+    color: white;
+    font-size: 10px;
+    border-radius: 50%;
+}
+
+.card-info {
+    width: 60%;
+}
+
+.card-name {
+    margin-top: 5px;
+}
+
+.card-status {
+    margin-top: 5px;
+    color: #30D38F;
+    font-size: 13px;
+}
+
+.card-price {
+    font-family: "Roboto-Bold";
+}
+
+.pessoa2 {
+    background-image: url(../IMAGES/fake-2.png);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) black;
+}
+
+.pessoa3 {
+    background-image: url(../IMAGES/pfk05.png);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) black;
+}
+
+.pessoa4 {
+    background-image: url(../IMAGES/fake-3.png);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) black;
+}
+
+.bolinha1 {
+    background-color: #30D38F;
+}
+
+.bolinha2 {
+    background-color: orangered;
+}
+
+.bolinha3 {
+    background-color: orangered;
+}
+
+.bolinha4 {
+    background-color: #30D38F;
+}
+
+.bolinha5 {
+    background-color: orangered;
+}
+
+.status1 {
+    color: #30D38F
+}
+
+.status2 {
+    color: orangered
+}
+
+.status3 {
+    color: orangered
+}
+
+.status4 {
+    color: #30D38F
+}
+
+.status5 {
+    color: orangered
+}
+
+.menu-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    /* color: grey; */
+    border-radius: 20% 20% 0 0;
+}
+
+a {
+    color: grey;
+}
+
+a:hover {
+    color: #00A5DD;
+}
+
+
+/**********  BREAKPOINTS  **********/
+
+
+/**** Tablets  ****/
+
+@media screen and ( min-width:768px) {
+    header {
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 230px;
+    }
+    header h1 {
+        font-size: 32px;
+    }
+    .search-box {
+        width: 60px;
+    }
+    header i {
+        font-size: 24px;
+    }
+}
+
+.card-perfil {
+    width: 85px;
+    height: 85px;
+}
+
+.card-counter {
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
+}
+
+.card-name {
+    font-size: 24px;
+}
+
+.card-status {
+    font-size: 18px;
+}
+
+.card-price {
+    font-size: 24px;
+}
+
+.menu-bottom {
+    height: 85px;
+}
+
+.menu-item {
+    font-size: 28px;
+}
+
+
+/* Desktop */
+
+@media screen and ( min-width:992px) {
+    .card-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 950px;
+        /* border: 1px solid red; */
+    }
+    .card {
+        margin-bottom: 15px;
+        /* border: solid 1px #008000; */
+        width: 150px;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s;
+    }
+    .card:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    .card-perfil {
+        width: 100px;
+        height: 100px;
+    }
+    .card-title {
+        font-size: 20px;
+        width: 100%;
+    }
+    .card-price {
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .card-info {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .card-name {
+        font-size: 14px;
+        text-align: center;
+    }
+    .card-status {
+        font-size: 12px;
+        text-align: center;
+    }
+    .card-counter {
+        top: 0;
+        right: 0;
+        width: 25px;
+        height: 25px;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+}
+
+
+/* Telas Largas */
+
+@media screen and (min-width:1200px) {
+    .page-content {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
