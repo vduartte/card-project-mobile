@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        
+        .container {
+            border: 3px solid black;
+            @media screen and (max-width: 1200px)
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        
+        
+
+        h1{
+        
+            color: purple;}
+            /*  Tablets >= 768px */
+            @media screen and (min-width: 768px) {
+                h1 { text-align:  center; color: salmon;
+                    
+                }
+
+}           
+            /* Desktops >= 920px */
+            @media screen and (min-width: 920px) {
+                h1 {
+                    text-align: justify;
+                    color: white;
+                    }
+                    body {
+                        background-color: white;
+                    }
+
+            }
+            /* Telas Largas >= 1200px */
+            @media screen and (min-width: 1200px) {
+                h1 {
+                    text-align: right;
+                    ;
+                    color: deeppink;
+                 }
+                 body {
+                     background-color:mediumspringgreen;
+                 }
+
+            }
+
+            
+            
+            
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia est voluptatum ipsum enim quibusdam, corporis quas iure rerum delectus odio sapiente quo sequi maxime libero adipisci nostrum nihil fuga accusantium!</p>
+   
+</div>
+</body>
+</html>
